@@ -31,19 +31,10 @@ html,body
     display: block;
 }
 
-@media (max-width: 600px) {
-    .sidebar {
-      display: none;
-    }
-
-    body{
-    margin: 0 auto;
-    background-color: rgb(136, 0, 255);
-    background-image: url("images/bg-mobile.svg");
-    background-repeat: no-repeat, repeat;
-    background-size: cover;
-    }
-  }
+footer{
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+}
 
 .parent {
     display: grid;
@@ -55,16 +46,19 @@ html,body
     }
     
     .header { 
+        grid-area: header;
         grid-area: 2 / 2 / 3 / 12; 
     }
     .sidebar { 
+        grid-area: sidebar;
         grid-area:  4 / 2 / 11 / 7;
         background-image: url("images/illustration-mockups.svg");
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat,repeat;
         height: 100%;
     }
     .content { 
+        grid-area: avatar;
         grid-area: 4 / 8 / 11 / 12; 
         height: 100%;
     }
