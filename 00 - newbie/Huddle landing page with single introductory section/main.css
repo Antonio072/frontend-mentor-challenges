@@ -1,0 +1,65 @@
+html,body
+{
+    margin: 0 auto;
+    background-color:hsl(257, 40%, 49%);
+    background-image: url("images/bg-desktop.svg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+
+    
+}
+
+.content>h1{
+    font-family: Poppins, sans-serif;
+    font-weight: 700 ;
+    color: white;
+}
+
+.content>h3{
+    font-family: 'Open Sans', sans-serif;
+    color:white;
+}
+
+.button{
+    background-color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: medium;
+    color:hsl(257, 40%, 49%) ;
+    height: 50px;
+    width: 150px;
+    display: block;
+}
+
+footer{
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+    }
+    
+    .header { 
+        grid-area: header;
+        grid-area: 2 / 2 / 3 / 12; 
+    }
+    .sidebar { 
+        grid-area: sidebar;
+        grid-area:  4 / 2 / 11 / 7;
+        background-image: url("images/illustration-mockups.svg");
+        background-size: contain;
+        background-repeat: no-repeat,repeat;
+        height: 100%;
+    }
+    .content { 
+        grid-area: avatar;
+        grid-area: 4 / 8 / 11 / 12; 
+        height: 100%;
+    }
+    
