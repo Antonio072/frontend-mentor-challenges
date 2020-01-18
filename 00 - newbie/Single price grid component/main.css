@@ -1,0 +1,105 @@
+html,body{
+    margin: 0 auto;
+    
+    font-family: Karla, sans-serif;
+}
+
+:root {
+    --main-bg-color: coral;
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --cyan: hsl(179, 62%, 43%);
+    --cyan-alpha: hsla(179, 62%, 43%, 0.8);
+    --bright-yellow: hsl(71, 73%, 54%);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card{
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5%;
+    background-color: white;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main{
+    margin: 5%;
+}
+.content{
+    color:var(--grayish-blue);
+
+}
+.justify-content-center{
+    justify-content: center;
+}
+
+.suscription{
+    padding: 5%;
+    background-color: var(--cyan);
+    justify-content: center;
+    color:white;
+    flex-grow: 1;
+}
+
+.about-us{
+    padding: 5%;
+    color: white;
+    background-color: var(--cyan-alpha);
+    flex-grow: 1;
+}
+
+.title{
+    font-weight: 700;
+    color: var(--cyan);
+}
+
+.subtitle{
+    color: white;
+}
+
+.day{
+    color: var(--bright-yellow);
+}
+
+.price{
+    color:white;
+}
+
+.button{
+    border-radius: 5px ;
+    height: 50px;
+    border: none;
+    color: white;
+    width: 100%;
+    background-color: var(--bright-yellow);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+
+}
+
+.about-us li {
+    color:var(--light-gray);
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
